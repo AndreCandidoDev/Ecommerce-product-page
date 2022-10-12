@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+h1{
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    padding: 25px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid gray;
+    padding: 25px;
+    padding-top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.links{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    align-items: baseline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.navLinks > p:hover{
+    color: red;
+    cursor: pointer;
+    /* border-bottom: 1px solid red; */
+    /* padding-bottom: 20px; */
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+}
+
+.cart > img{
+    max-width: 30%;
+    height: auto;
+}
+
+.content{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 58% 28%;
+}
+
+.imgs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.imgs >img{
+    max-width: 100%;
+    max-height: 70%;
+    border-radius: 15px;
+}
+
+.thumbImages{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.thumbImage > img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.priceRow{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.description{
+    position: relative;
+}
+
+.descriptionContent{
+    position: absolute;
+    top: 20%;
+}
+
+.priceRow > p {
+    margin: 0;
+}
+
+.addArea{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+.stepperComponent{
+    display: flex;
+}
+
+.stepperComponent > button{
+    border: 0;
+    padding: 1rem;
+    width: 33%;
+    color: orange;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.stepperComponent > p{
+    padding: 1rem;
+    background-color: #F0F0F0;
+    width: 33%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.addCart > button{
+    padding: 1rem;
+    color: white;
+    background-color: orange;
+    width: 100%;
+    border: 0;
+    border-radius: 15px;
 }
